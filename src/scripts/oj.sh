@@ -14,5 +14,5 @@ last_index=`expr ${#array[@]} - 1`
 if [ -e "${array[${last_index}]}.php" ]; then
   echo "ファイルが存在するためテンプレートのコピーをスキップしました"
 else
-  cp $PWD/sh/template.php "${array[${last_index}]}.php"
+  cp $PWD/scripts/template.php "${array[${last_index}]}.php"
 fi
